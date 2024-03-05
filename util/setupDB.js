@@ -1,7 +1,7 @@
 import { MongoClient } from 'mongodb'
-const url = 'mongodb+srv://vtw:vtw123#@cluster0.tt0ortj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+const url = 'mongodb+srv://vtw:vtw123@cluster0.tt0ortj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 const options = { useNewUrlParser: true }
-let connectDB
+export let connectDB
 
 if (process.env.NODE_ENV === 'development') {
   if (!global._mongo) {
